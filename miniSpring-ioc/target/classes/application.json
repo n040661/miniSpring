@@ -1,0 +1,36 @@
+[
+  {
+    "name":"robot",
+    "className":"org.miniSpring.ioc.entity.Robot"
+  },
+  {
+    "name":"hand",
+    "className":"org.miniSpring.ioc.entity.Hand"
+  },
+  {
+    "name":"mouth",
+    "className":"org.miniSpring.ioc.entity.Mouth"
+  },
+  {
+    "name":"beforeMethod",
+    "className":"org.miniSpring.aop.Test.StartTimeBeforeMethod"
+  },
+  {
+    "name":"afterMethod",
+    "className":"org.miniSpring.aop.Test.EndTimeAfterMethod"
+  },
+  {
+    "name":"testService",
+    "className":"org.miniSpring.aop.Test.TestService"
+  },
+  {
+    "name":"testServiceProxy",
+    "className":"org.miniSpring.aop.Core.ProxyFactoryBean",
+    "target":"testService",
+    "interceptorNames":[
+      "beforeMethod",
+      "afterMethod"
+    ]
+  }  
+  
+]

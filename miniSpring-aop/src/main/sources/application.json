@@ -1,0 +1,23 @@
+[
+  {
+    "name":"beforeMethod",
+    "className":"org.miniSpring.aop.Test.StartTimeBeforeMethod"
+  },
+  {
+    "name":"afterMethod",
+    "className":"org.miniSpring.aop.Test.EndTimeAfterMethod"
+  },
+  {
+    "name":"testService",
+    "className":"org.miniSpring.aop.Test.TestService"
+  },
+  {
+    "name":"testServiceProxy",
+    "className":"org.miniSpring.aop.Core.ProxyFactoryBean",
+    "target":"testService",
+    "interceptorNames":[
+      "beforeMethod",
+      "afterMethod"
+    ]
+  }
+]
